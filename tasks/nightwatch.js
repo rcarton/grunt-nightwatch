@@ -106,8 +106,6 @@ module.exports = function(grunt) {
         $.verbose.ok('Target custom JSON-file: ' + file);
         $.mergeVars(settings, _.pick(data, settings_opts));
         $.mergeVars(options, _.pick(data, fake_opts));
-
-        $.expandPaths(file, settings, paths);
       }
     });
 
